@@ -1,0 +1,23 @@
+/* Generals */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header */ 
+
+header {
+    background-color: rgb(255, 105, 0);
+    height: 100px;
+    color: white;
+}
+
+header img {
+    height: 25px;
+}
+
+header a {
+    text-decoration: none;
+}
