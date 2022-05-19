@@ -14,12 +14,16 @@ h3 {
     font-size: 18px;
 }
 
-p , h3 , del{
+p ,  main h3 , del{
     color: black;
 }
 
 .red {
     color: red;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* Header */ 
@@ -45,7 +49,7 @@ header button {
     background-color: rgb(255, 105, 0);
 }
 
-header, a {
+header a {
     text-decoration: none;
     color: white;
     padding-right: 10px;
@@ -157,4 +161,32 @@ article {
 
 .favorite:hover .fa-heart {
     color: red
+}
+
+/* Footer */
+
+footer {
+    background: rgb(26, 26, 26);
+    color: white;
+}
+
+#flex-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+    font-size: 13px;
+}
+
+#social {
+    margin-right: 20px
 }
