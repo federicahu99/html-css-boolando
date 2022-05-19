@@ -17,6 +17,11 @@ h3 {
 p , h3 , del{
     color: black;
 }
+
+.red {
+    color: red;
+}
+
 /* Header */ 
 
 header {
@@ -94,11 +99,10 @@ article {
 }
 
 .second-photo {
+    max-width: 100%;
     display: none;
 }
-.red {
-    color: red;
-}
+
 
 .card {
     cursor:pointer;
@@ -142,4 +146,8 @@ article {
 
 .card:hover .firstphoto {
     display: none;
+}
+
+.card:hover .second-photo {
+    display: block;
 }
