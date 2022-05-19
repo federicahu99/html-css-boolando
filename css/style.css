@@ -6,6 +6,17 @@
     font-family: sans-serif;
 }
 
+p{
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p , h3 , del{
+    color: black;
+}
 /* Header */ 
 
 header {
@@ -39,7 +50,7 @@ header, a {
 
 .container {
     margin: 0 auto;
-    width: 1000px;
+    width: 1300px;
 }
 
 .header-menu {
@@ -54,82 +65,45 @@ i {
     height: 15px;
 }
 
+#user-menu {
+    justify-content:right;
+    padding-right: 10px;
+}
+
 /* Main */
-
-
 
 
 article {
     position: relative;
-    
+    width: 100%;
+    margin: 100px -15px;
 }
 
 .description-article {
-    position: absolute;
-    left: 250px;
-    top: 160px;
+    display: flex;
+    width: 100%;
 }
 
-#first-bg {
-    background-image: url('../img/1.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
+.row {
+    flex-basis: 31%;
 }
 
-#second-bg {
-    background-image: url('../img/2.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
-    display: inline-block;
+.row .first-photo{
+    max-width: 100%;
+    display: block;
 }
 
-#third-bg {
-    background-image: url('../img/3.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
+.second-photo {
+    display: none;
 }
-
-
-#fourth-bg {
-    background-image: url('../img/4.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
-}
-
-#fifth-bg {
-    background-image: url('../img/5.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
-}
-
-#sixth-bg {
-    background-image: url('../img/6.webp');
-    height: 600px;
-    background-position: center;
-    background-size:cover;
-}
-
-
 .red {
     color: red;
 }
 
-p{
-    font-size: 15px;
+.card {
+    cursor:pointer;
 }
 
-h3 {
-    font-size: 18px;
-}
-
-p , h3 , del{
-    color: black;
-}
 
 .discount {
     display: inline-block;
@@ -145,7 +119,6 @@ p , h3 , del{
     color: white;
 }
 
-
 .tags {
     font-size: 16px;
     position: absolute;
@@ -160,9 +133,13 @@ p , h3 , del{
     padding: 10px 15px;
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 13px;
 }
 
-article:hover .article-img{
-    background: url('img/1b.webp');
+
+/* hover */
+
+
+.card:hover .firstphoto {
+    display: none;
 }
