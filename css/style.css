@@ -85,7 +85,7 @@ i {
 article {
     position: relative;
     width: 100%;
-    margin: 100px 10px 50px 10px;
+    margin: 100px 21px 50px 21px;
     flex-basis: 30%
 }
 
@@ -168,12 +168,14 @@ article {
 footer {
     background: rgb(26, 26, 26);
     color: white;
+    min-height: 75px;
 }
 
 #flex-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
+    padding: 25px
 }
 
 #navbar.footer {
@@ -187,6 +189,20 @@ footer a {
     font-size: 13px;
 }
 
-#social {
-    margin-right: 20px
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 15px 15px 0 0;
+}
+
+footer i {
+    margin-left: 10px
+}
+
+footer h4 {
+    margin-bottom: 12px
 }
