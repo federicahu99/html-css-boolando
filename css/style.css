@@ -10,15 +10,17 @@
 
 header {
     background-color: rgb(255, 105, 0);
-    height: 100px;
+    height: 60px;
     color: white;
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-size: 18px;
 }
 
 header img {
     height: 30px;
+    text-align: center;
 }
 
 header button {    
@@ -31,12 +33,13 @@ header, a {
     text-decoration: none;
     color: white;
     padding-right: 10px;
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
 }
 
 .header-menu {
@@ -44,30 +47,73 @@ header, a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 28px;
+    padding-top: 15px;
+}
+
+i {
+    height: 15px;
 }
 
 /* Main */
 
-#row {
-    display: flex;
-    padding: 15px;
-}
 
-#flex-container {
-    margin: 0 auto;
-}
 
-.article-img {
-    width: 400px;
-    display: inline-block;
+
+article {
+    position: relative;
+    
 }
 
 .description-article {
     position: absolute;
     left: 250px;
-    top: 160px
+    top: 160px;
 }
+
+#first-bg {
+    background-image: url('../img/1.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+}
+
+#second-bg {
+    background-image: url('../img/2.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+    display: inline-block;
+}
+
+#third-bg {
+    background-image: url('../img/3.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+}
+
+
+#fourth-bg {
+    background-image: url('../img/4.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+}
+
+#fifth-bg {
+    background-image: url('../img/5.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+}
+
+#sixth-bg {
+    background-image: url('../img/6.webp');
+    height: 600px;
+    background-position: center;
+    background-size:cover;
+}
+
 
 .red {
     color: red;
@@ -99,9 +145,6 @@ p , h3 , del{
     color: white;
 }
 
-article {
-    position: relative;
-}
 
 .tags {
     font-size: 16px;
@@ -120,6 +163,6 @@ article {
     top: 10px;
 }
 
-article:hover {
+article:hover .article-img{
     background: url('img/1b.webp');
 }
