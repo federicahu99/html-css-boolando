@@ -126,7 +126,7 @@ article {
 .tags {
     font-size: 16px;
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 105px;
 }
 
@@ -138,16 +138,21 @@ article {
     position: absolute;
     right: 0;
     top: 13px;
+    cursor: pointer;
 }
 
 
 /* hover */
 
 
-.card:hover .firstphoto {
+.card:hover .first-photo {
     display: none;
 }
 
 .card:hover .second-photo {
     display: block;
+}
+
+.card:hover .favorite {
+    color: red
 }
